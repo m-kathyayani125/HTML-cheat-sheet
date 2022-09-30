@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Cheatsheet</title>
+    </head>
+    <body>
+        <a href="MyBlog.html">back to blog</a>
+        <!--headings-->
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+
+        <!-- paragraph-->
+        <p>
+            Lorem ipsum dolor sit, <strong>amet consectetur</strong> adipisicing elit. <em>Quas necessitatibus</em> temporibus sunt ullam nesciunt, perferendis tenetur sed ea voluptatem rem. Animi perspiciatis, aspernatur eum praesentium exercitationem quo porro delectus neque.
+
+        </p>
+        <!--block tags: take new line by default-->
+
+        <!--attributes-->
+        <!--key:value pairs to add details to a tag.. 
+            syntax:   attribute_name="value"--
+            eg:   href="http://google.com"-->
+        
+        <p>
+            <a>Lorem </a><!--no change-->gap
+            <a href="">dolor sit</a> gap<!--highlights to link..but directs nowhere-->
+            <a href="http://google.com">amet consectetur</a> gap<!--highlights for link and directs to mentioned web link i,e google here-->
+            <!--opens in same tab--> 
+            <a href="http://google.com" target="_blank">adipisicing elit.</a><!--opens that directing link to new tab-->
+             Quos aspernatur veniam omnis, blanditiis, tenetur sapiente repudiandae accusamus nobis ex itaque labore. Iure atque a eligendi eius minus sapiente. Provident, nam.
+        </p><!--observe tag p going to new line by default-->
+
+        <!--lists-->
+        <ul><!--unordered list-->
+            <li>list item 1</li>
+            <li>list item 2</li>
+            <li>list item 3</li>
+            <li>list item 4</li>
+        </ul>
+        <ol><!--ordered list-->
+            <li>list item 1</li>
+            <li>list item 2</li>
+            <li>list item 3</li>
+            <li>list item 4</li>
+        </ol>
+
+        <!--tables-->
+        <!--syntax:-->
+        <table>
+            <thead>
+                <tr>
+                    <td>Name</td>
+                    <td>email</td>
+                    <td>Age</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Kat</td>
+                    <td>Kat@gmail.com</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>diva</td>
+                    <td>diva@gmail.com</td>
+                    <td>5</td>
+                </tr>
+            </tbody>
+        </table>
+         
+
+        <br><!--break line-->
+        <hr><!-- horizontal line-->
+
+        <!--forms-->
+        <!--
+            attributes:-
+            type:to define if its text or message or date or number like age
+            value:to assign default value to a label
+            name: if made responsive then telling that server which element is that label
+            placeholders:sentence in labels..that tell user what to enter---usually in pale color eg:enter ur name
+        -->
+        <form>
+            <label>First Name</label>
+            <input type="text" name="firstName">
+            
+            <label> Last Name</label>
+            <input type="text" name="lastName">
+            <!--label is inline tag -->
+            <br>
+            <hr>
+            <br>
+            
+            <!--div is block tag so for newline use div-->
+            <div>
+                <label>First Name</label>
+                <input type="text" name="firstName" placeholder="Enter ur first name">
+            </div>
+            <br>
+            <div>
+                <label> Last Name</label>
+                <input type="text" name="lastName">
+            </div>
+            <br>
+            <!--email-->
+            <div>
+                <label> Email</label>
+                <input type="email" name="lastName">
+            </div>
+ 
+            <br>
+            <!--message-->
+            <div>
+                <label> Message</label>
+                <textarea name="message"></textarea>
+            </div>
+            <br>
+            <!--gender with select scrollbar-->
+            <div>
+                <label> Gender</label>
+                <select>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Others</option>
+                </select>
+            </div>
+            <br>
+            <!--Age with increase and decrease value option-->
+            <div>
+                <label> Age</label>
+                <input type="number" name="Age" value="30">
+            </div>
+            <br>
+            <!--Birthday to select date-->
+            <div>
+                <label> Birthday</label>
+                <input type="date" name="birthday">
+            </div>
+            <br>
+            <input type="submit" value="Submit">
+
+        </form>
+        <br>
+        <button>Click Me</button>
+        
+
+        <!--images-->
+        <!--inline tag-->
+
+        <br>
+        <!--src:to give path of that image..if in same folder as index.html then name.extension is enough
+           alt: text that should display even if the image couldnt download due to some issue 
+           width:size
+           height:size
+        -->
+        <img src="images/sample.jfif" alt="My Sample img" width="200px">
+        <br>
+        <!--if image doesnt exits the alt descroibes that image-->
+        <img src="images/abc.jfif" alt="My Sample img" width="200px">
+         
+
+
+        <!--quotations-->
+
+        <blockquote><!--adds padding left and right-->
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta beatae similique accusamus eius natus mollitia quia quod asperiores laboriosam, doloremque ducimus temporibus unde voluptatibus debitis fugiat quisquam praesentium. Officiis, totam!
+        </blockquote>
+
+        <p>
+            <abbr title="World Health Organisation">WHO</abbr><!--gives full form by hovering cursor over it-->
+        </p>
+
+    </body>
+</html>
